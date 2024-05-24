@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const URL_API =
-  window.location.hostname === "retrend.netlify.app"
+  window.location.hostname === "retrend-lcs.netlify.app"
     ? "https://retrend.up.railway.app/"
     : "http://localhost:3001";
 
