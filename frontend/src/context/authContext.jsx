@@ -116,11 +116,12 @@ export const AuthProvider = ({ children }) => {
     navigate("/");
   };
 
-  //PARA QUE SE ABRA EL CLAUDINARY Y CARGAR IMAGEN
+  //PARA QUE SE ABRA EL CLOUDINARY Y CARGAR IMAGEN
   const showUploadWidget = cloudinary.createUploadWidget(
     {
-      cloudName: "dvogntdp2",
-      uploadPreset: "kysnseyx",
+      cloudName: "dg63r2ufi",
+      folder: "reTrend",
+      uploadPreset: "dcwns4py",
       sources: ["local", "url", "image_search", "google_drive"],
       googleApiKey: "<image_search_google_api_key>",
       showAdvancedOptions: true,
@@ -156,8 +157,9 @@ export const AuthProvider = ({ children }) => {
   const [images, setImages] = useState([]);
   const multipleUploadWidget = cloudinary.createUploadWidget(
     {
-      cloudName: "dvogntdp2",
-      uploadPreset: "kysnseyx",
+      cloudName: "dg63r2ufi",
+      folder: "reTrend",
+      uploadPreset: "dcwns4py",
       // sources: ["local", "url", "image_search", "google_drive"],
       sources: ["local"],
       googleApiKey: "<image_search_google_api_key>",
