@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@monorepo/frontend": "^0.0.0",
+    "axios": "^1.7.2",
     "bcrypt": "^5.1.0",
     "jsonwebtoken": "^9.0.0",
     "react-dom": "^18.2.0",
