@@ -43,14 +43,14 @@
   padding: 0 1em 0 1em;
 }
 
-.logoContainer img {
-  font-size: 4.5rem;
+.logoContainer span {
+  font-size: 1.5rem;
 }
 
-.logoContainer img:hover {
+.logoContainer span:hover {
   color: var(--blue-light-to-yellow-light);
 }
-.logoContainer img:focus {
+.logoContainer span:focus {
   color: var(--yellow-main);
 }
 .menu {

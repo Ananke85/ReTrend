@@ -60,8 +60,8 @@ const ListCategory = () => {
                 key={category._id}
               >
                 <span className={styles.logoContainer}> 
-                <img  src={category.logo}
-                alt = {category.title}></img>
+                <span  src={category.logo}
+                alt = {category.title}></span>
                 
                 </span>
                 {category.title}
