@@ -15,7 +15,7 @@ const getAllCategories = async (req, res) => {
 
 // Crear categorias
 const postCategory = async (req, res) => {
-  const { title, logo } = req.body;
+  const { title, logo, path } = req.body;
   if (!title || !logo) {
     return res.status(400).json({ error: { login: "Missing information" } });
   }
@@ -26,7 +26,7 @@ const postCategory = async (req, res) => {
       res.status(500).json({ error: "Ya existe esta categoria" });
     } else {
       // sino existe creamos una nueva categoria
-      const cat = new categoryModel({ title, logo });
+      const cat = new categoryModel({ title, logo, path });
       const newCat = await cat.save();
       res.status(201).json(newCat);
     }
