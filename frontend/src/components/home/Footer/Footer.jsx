@@ -8,6 +8,7 @@ import logo_dark from "../../../assets/images/logo-retrend-dark.png";
 
 const Footer = () => {
   const { data: categories, isLoading } = useQuery(["category"], getCategories);
+  console.log("las categories", categories)
 
   return (
     <>

@@ -9,6 +9,8 @@ const ListCategory = () => {
   // Hago peticion a BD para obtener todas las categorias
   const { data: categories, isLoading } = useQuery(["category"], getCategories);
 
+  console.log("categories", categories)
+
   const productsPerPage = 6;
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
