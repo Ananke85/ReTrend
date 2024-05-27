@@ -59,7 +59,7 @@ const ListCategory = () => {
                 className={styles.item}
                 key={category._id}
               >
-                <span className={category.logo} />
+                <span>{category.logo}</span>
                 {category.title}
               </NavLink>
             );
